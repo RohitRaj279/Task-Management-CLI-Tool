@@ -194,6 +194,4 @@ The following test cases demonstrate each command along with expected output:
     No pending tasks.
     ```
 
-## License
 
-This project is free to use and distribute.
