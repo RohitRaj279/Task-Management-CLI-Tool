@@ -9,6 +9,7 @@ This is a simple command-line interface (CLI) tool for managing tasks. You can a
 - **View Tasks**: List all pending tasks.
 - **Complete a Task**: Mark a task as completed.
 - **Delete a Task**: Remove a task from the list.
+- **Persistence**: Tasks are stored in a text file, so they are saved between program runs.
 
 ## Requirements
 
