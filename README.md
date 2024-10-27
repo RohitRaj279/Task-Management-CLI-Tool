@@ -38,11 +38,11 @@ python task_manager.py [command] <arguments>
      ```
    - **Example**:
      ```bash
-     python task_manager.py add "Buy groceries"
+     python task_manager.py add "Buy o Tasks should be stored in a text file, so they are saved between program runs."
      ```
    - **Output**:
      ```
-     Task added: "Buy groceries"
+     Task added: "Buy laptop"
      ```
 
 2. **View Tasks**
@@ -54,8 +54,8 @@ python task_manager.py [command] <arguments>
    - **Output** (Example):
      ```
      Pending Tasks:
-     1. Buy groceries
-     2. Clean the house
+     1. Buy laptop
+     2. Edit the video
      ```
 
 3. **Complete a Task**
@@ -70,7 +70,7 @@ python task_manager.py [command] <arguments>
      ```
    - **Output**:
      ```
-     Task completed: "Buy groceries"
+     Task completed: "Buy laptop"
      ```
 
 4. **Delete a Task**
@@ -85,7 +85,7 @@ python task_manager.py [command] <arguments>
      ```
    - **Output**:
      ```
-     Task deleted: "Clean the house"
+     Task deleted: "Edit the video"
      ```
 
 ## Notes
@@ -95,57 +95,34 @@ python task_manager.py [command] <arguments>
 
 ## Example Usage
 
-```bash
-# Add tasks
-python task_manager.py add "Buy groceries"
-python task_manager.py add "Clean the house"
-python task_manager.py add "Finish the report"
-
-# List tasks
-python task_manager.py list
-
-# Complete a task
-python task_manager.py complete 1
-
-# List tasks again to see updates
-python task_manager.py list
-
-# Delete a task
-python task_manager.py delete 2
-
-# Final list of tasks
-python task_manager.py list
-```
-
-## Test Cases
 
 The following test cases demonstrate each command along with expected output:
 
 1. **Add Task**:
    ```bash
-   python task_manager.py add "Buy groceries"
+   python task_manager.py add "Buy laptop"
    ```
    **Expected Output**:
    ```
-   Task added: "Buy groceries"
+   Task added: "Buy laptop"
    ```
 
 2. **Add Another Task**:
    ```bash
-   python task_manager.py add "Clean the house"
+   python task_manager.py add "Edit the video"
    ```
    **Expected Output**:
    ```
-   Task added: "Clean the house"
+   Task added: "Edit the video"
    ```
 
 3. **Add a Third Task**:
    ```bash
-   python task_manager.py add "Finish the report"
+   python task_manager.py add "Complete ML assignments"
    ```
    **Expected Output**:
    ```
-   Task added: "Finish the report"
+   Task added: "Complete ML assignments"
    ```
 
 4. **View Tasks**:
@@ -155,9 +132,9 @@ The following test cases demonstrate each command along with expected output:
    **Expected Output**:
    ```
    Pending Tasks:
-   1. Buy groceries
-   2. Clean the house
-   3. Finish the report
+   1. Buy laptop
+   2. Edit the video
+   3. Complete ML assignments
    ```
 
 5. **Complete Task (Mark the First Task as Completed)**:
@@ -166,7 +143,7 @@ The following test cases demonstrate each command along with expected output:
    ```
    **Expected Output**:
    ```
-   Task completed: "Buy groceries"
+   Task completed: "Buy laptop"
    ```
 
 6. **View Tasks After Completion**:
@@ -176,8 +153,8 @@ The following test cases demonstrate each command along with expected output:
    **Expected Output**:
    ```
    Pending Tasks:
-   1. Clean the house
-   2. Finish the report
+   1. Edit the video
+   2. Complete ML assignments
    ```
 
 7. **Delete Task (Delete the First Task in the Current List)**:
@@ -186,7 +163,7 @@ The following test cases demonstrate each command along with expected output:
    ```
    **Expected Output**:
    ```
-   Task deleted: "Clean the house"
+   Task deleted: "Edit the video"
    ```
 
 8. **View Tasks After Deletion**:
@@ -196,7 +173,7 @@ The following test cases demonstrate each command along with expected output:
    **Expected Output**:
    ```
    Pending Tasks:
-   1. Finish the report
+   1. Complete ML assignments
    ```
 
 9. **Complete All Remaining Tasks (Clean Up for Next Tests)**:
@@ -205,7 +182,7 @@ The following test cases demonstrate each command along with expected output:
    ```
    **Expected Output**:
    ```
-   Task completed: "Finish the report"
+   Task completed: "Complete ML assignments"
    ```
 
 10. **View Tasks After All Tasks Are Completed**:
